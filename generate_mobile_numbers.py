@@ -2,7 +2,7 @@
 """
 Bangladesh Mobile Number Generator - Professional Implementation
 
-Author: [Your Name]
+Author: SK Sadia Tasnim Elma
 Date: August 2025
 Purpose: Generate 3,000 unique Bangladesh mobile numbers for data analysis assignment
 
@@ -260,7 +260,7 @@ class BangladeshMobileNumberGenerator:
         report.append(f"├── Correct prefix: {validation_results['correct_prefix']:,}")
         report.append(f"├── Correct length: {validation_results['correct_length']:,}")
         report.append(f"├── All numeric: {validation_results['all_numeric']:,}")
-        report.append(f"└── Validation status: {'✅ PASSED' if validation_results['validation_passed'] else '❌ FAILED'}")
+        report.append(f"└── Validation status: {'PASSED' if validation_results['validation_passed'] else 'FAILED'}")
         
         if validation_results['issues']:
             report.append("")
@@ -309,15 +309,15 @@ def main():
         
         # Final status
         if validation_results['validation_passed']:
-            logger.info("✅ Dataset generation completed successfully!")
-            logger.info(f"📁 Output file: {excel_path}")
+            logger.info("Dataset generation completed successfully!")
+            logger.info(f"Output file: {excel_path}")
         else:
-            logger.error("❌ Dataset validation failed!")
+            logger.error("Dataset validation failed!")
             for issue in validation_results['issues']:
                 logger.error(f"   - {issue}")
             
     except Exception as e:
-        logger.error(f"❌ Error during generation: {str(e)}")
+        logger.error(f"Error during generation: {str(e)}")
         raise
 
 if __name__ == "__main__":
