@@ -6,18 +6,18 @@ A clean and efficient Python solution for generating 3,000 unique Bangladesh mob
 **Date**: August 2025  
 **Purpose**: Data analysis assignment for DataSense
 
-## 📋 Project Overview
+## Project Overview
 
 This project generates exactly 3,000 unique mobile phone numbers following Bangladesh Banglalink operator standards using optimal statistical sampling techniques.
 
-### ✨ Key Features
+### Key Features
 
 - **Optimal Algorithm**: Statistical sampling without replacement for guaranteed uniqueness
 - **Fast Performance**: Generates 3,000 numbers in ~0.01-0.02 seconds
 - **Clean Code**: Simple, readable implementation with built-in validation
 - **Professional Output**: Excel file with proper formatting and column headers
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -45,7 +45,7 @@ This project generates exactly 3,000 unique mobile phone numbers following Bangl
 - **Excel File**: `BanglalinkNumbers.xlsx` containing 3,000 unique mobile numbers
 - **Console Message**: Confirmation of successful generation
 
-## 📊 Technical Specifications
+## Technical Specifications
 
 | Specification | Value |
 |---------------|-------|
@@ -55,7 +55,7 @@ This project generates exactly 3,000 unique mobile phone numbers following Bangl
 | **Algorithm** | NumPy statistical sampling (`replace=False`) |
 | **Performance** | O(n) time complexity |
 
-## 🔧 Implementation Details
+## Implementation Details
 
 ### Core Algorithm
 ```python
@@ -73,14 +73,14 @@ numbers = np.char.add(prefix, suffixes)
 - **Memory Efficient**: Minimal memory footprint
 - **Reproducible**: Fixed random seed ensures consistent results
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **Generation Speed**: ~0.01-0.02 seconds
 - **Memory Usage**: Optimal O(n) space complexity
 - **Validation**: 100% pass rate with built-in assertions
 - **Maximum Capacity**: 100,000,000 possible unique combinations
 
-## 🔍 Sample Output
+## Sample Output
 
 ```
 Mobile_Number
@@ -92,7 +92,7 @@ Mobile_Number
 ...
 ```
 
-## ✅ Quality Assurance
+## Quality Assurance
 
 The code includes comprehensive validation:
 ```python
@@ -101,7 +101,7 @@ assert all(num.startswith("019") for num in numbers) # Prefix validation
 assert all(len(num) == 11 for num in numbers)       # Length verification
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bangladesh-mobile-numbers/
@@ -113,7 +113,7 @@ bangladesh-mobile-numbers/
 └── .gitignore                  # Git ignore patterns
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - **pandas**: Data manipulation and Excel export functionality
 - **numpy**: Efficient numerical operations and statistical sampling
@@ -121,19 +121,19 @@ bangladesh-mobile-numbers/
 
 Install with: `pip install -r requirements.txt`
 
-## 🎯 Assignment Requirements Fulfilled
+## Assignment Requirements Fulfilled
 
-- ✅ **Prefix**: All numbers begin with "019"
-- ✅ **Format**: 11-digit numerical strings
-- ✅ **Uniqueness**: All 3,000 numbers are guaranteed unique
-- ✅ **Software**: Python with statistical libraries
-- ✅ **Output**: Excel file (.xlsx) with "BanglalinkNumbers" column header
+- **Prefix**: All numbers begin with "019"
+- **Format**: 11-digit numerical strings
+- **Uniqueness**: All 3,000 numbers are guaranteed unique
+- **Software**: Python with statistical libraries
+- **Output**: Excel file (.xlsx) with "BanglalinkNumbers" column header
 
-## 🔬 Technical Methodology
+## Technical Methodology
 
 For comprehensive technical details, algorithm analysis, and performance benchmarks, see [methodology.md](methodology.md).
 
-## 👩‍💻 Author
+## Author
 
 **SK Sadia Tasnim Elma**
 - 📧 Email: [sksadiatasnim460@gmail.com]
