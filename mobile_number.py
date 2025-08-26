@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Bangladesh Mobile Number Generator
 
@@ -38,7 +37,7 @@ def main():
     
     # Save to Excel
     df = pd.DataFrame(numbers, columns=["Mobile_Number"])
-    output_file = "Banglalink_Numbers.xlsx"
+    output_file = "BanglalinkNumbers.xlsx"
     df.to_excel(output_file, index=False)
     
     print(f"Successful in Generating  {len(numbers)} unique numbers and saved to {output_file}")
